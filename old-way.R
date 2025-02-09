@@ -29,8 +29,8 @@ mtcars |>
   theme_classic() +
   labs(title = "High Value Analysis",
        subtitle = "That needs to be Reproducible -within reason",
-       x = "Age",
-       y = "Patience Index")
+       x = "Number of Toddler Interruptions",
+       y = "Productivity Index")
 
 
 
