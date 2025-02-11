@@ -37,3 +37,36 @@ renv::install("purrr@1.0.0", prompt = FALSE)
 renv::update("purrr")
 
 # can update everything with renv::update()
+
+# let's go through the basics
+
+# we use a function that was installed
+list_of_numbers <-
+  purrr::map(1:10, \(x) x^2)
+
+list_of_numbers
+
+renv::snapshot()
+
+# try cloning elsewhere and see what happens
+renv::install("gert", prompt = FALSE)
+renv::install("fs", prompt = FALSE)
+
+tmpfolder <- fs::dir_create(tempdir(), "renv-test")
+gert::git_clone(
+  url = "https://github.com/asenetcky/demo-renv.git",
+  path = tmpfolder
+)
+
+renv::install("rstudioapi", prompt = FALSE)
+proj_path <-
+  rstudioapi::initializeProject(tmpfolder)
+
+
+renv::snapshot()
+
+rstudioapi::openProject(
+  proj_path,
+  newSession = TRUE
+)
+
