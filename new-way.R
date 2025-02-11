@@ -44,7 +44,7 @@ renv::update("purrr")
 
 # we use a function that was installed
 list_of_numbers <-
-  purrr::map(1:10, \(x) x^2)
+  purrr::map(1:10, \(number) number^2)
 
 list_of_numbers
 
