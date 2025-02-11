@@ -16,10 +16,7 @@
 install.packages("renv")
 renv::init()
 
-
-
 # showcasing the cache
-
 # we can install once
 renv::install("purrr")
 
