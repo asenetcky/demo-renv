@@ -14,7 +14,7 @@
 
 # and then you would comment that out or erase it
 # not really paying mind to where these get installed
-# or their dependancies
+# or their dependencies
 
 # and then you would load the libraries
 # library(dplyr)
@@ -28,7 +28,7 @@
 #   geom_point() +
 #   theme_classic() +
 #   labs(title = "High Value Analysis",
-#        subtitle = "That needs to be Reproducible -within reason",
+#        subtitle = "That needs to be Reproducible",
 #        x = "Number of Toddler Interruptions",
 #        y = "Productivity Index")
 
