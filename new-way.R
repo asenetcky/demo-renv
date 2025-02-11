@@ -57,6 +57,7 @@ renv::install("fs", prompt = FALSE)
 tmpfolder <- fs::dir_create(tempdir(), "demo-renv")
 gert::git_clone(
   url = "https://github.com/asenetcky/demo-renv.git",
+  branch = "established-project",
   path = tmpfolder
 )
 
