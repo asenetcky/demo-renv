@@ -10,6 +10,6 @@ mtcars |>
   ggplot2::geom_point() +
   ggplot2::theme_classic() +
   ggplot2::labs(title = "High Value Analysis",
-       subtitle = "That needs to be Reproducible -within reason",
+       subtitle = "That needs to be Reproducible",
        x = "Number of Toddler Interruptions",
        y = "Productivity Index")
