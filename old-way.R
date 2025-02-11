@@ -28,7 +28,7 @@ mtcars |>
   geom_point() +
   theme_classic() +
   labs(title = "High Value Analysis",
-       subtitle = "That needs to be Reproducible -within reason",
+       subtitle = "That needs to be Reproducible",
        x = "Number of Toddler Interruptions",
        y = "Productivity Index")
 
