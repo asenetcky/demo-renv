@@ -17,20 +17,20 @@
 # or their dependancies
 
 # and then you would load the libraries
-library(dplyr)
-library(ggplot2)
-library(readr)
-library(stringr)
-library(tidyr)
-
-mtcars |>
-  ggplot(aes(x = mpg, y = wt)) +
-  geom_point() +
-  theme_classic() +
-  labs(title = "High Value Analysis",
-       subtitle = "That needs to be Reproducible -within reason",
-       x = "Number of Toddler Interruptions",
-       y = "Productivity Index")
+# library(dplyr)
+# library(ggplot2)
+# library(readr)
+# library(stringr)
+# library(tidyr)
+#
+# mtcars |>
+#   ggplot(aes(x = mpg, y = wt)) +
+#   geom_point() +
+#   theme_classic() +
+#   labs(title = "High Value Analysis",
+#        subtitle = "That needs to be Reproducible -within reason",
+#        x = "Number of Toddler Interruptions",
+#        y = "Productivity Index")
 
 
 
