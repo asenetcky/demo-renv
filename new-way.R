@@ -54,7 +54,7 @@ renv::snapshot()
 renv::install("gert", prompt = FALSE)
 renv::install("fs", prompt = FALSE)
 
-tmpfolder <- fs::dir_create(tempdir())
+tmpfolder <- fs::dir_create(tempdir(), "demo-renv")
 gert::git_clone(
   url = "https://github.com/asenetcky/demo-renv.git",
   path = tmpfolder
@@ -72,3 +72,4 @@ rstudioapi::openProject(
   newSession = TRUE
 )
 
+fs::dir_delete(tmpfolder)
