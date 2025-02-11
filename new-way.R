@@ -13,6 +13,11 @@
 # share
 # renv restore
 
+install.packages("renv")
+renv::init()
+
+
+
 # showcasing the cache
 
 # we can install once
