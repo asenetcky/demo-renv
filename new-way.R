@@ -13,24 +13,14 @@
 # share
 # renv restore
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # showcasing the cache
+
+# we can install once
 renv::install("purrr")
 
+# and if we try to install again, it just looks
+# at the cache instead of possibly installing
+# different version
 rep("purrr", 10) |>
   purrr::walk(
     \(pkg){
@@ -45,3 +35,5 @@ rep("purrr", 10) |>
 renv::install("purrr@1.0.0", prompt = FALSE)
 
 renv::update("purrr")
+
+# can update everything with renv::update()
